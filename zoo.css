@@ -47,6 +47,24 @@ main {
   text-indent: 2em;
 }
 
-img[src="https://fcz.org/wp-content/uploads/2026/07/20230118-Lo8_MG19999.jpg"] {
-  inset-inline: 2em;
+.card {
+  position: relative; 
+  height: 650px;
+}
+
+.image02 {
+  position: absolute;
+  top: 20px;          
+  right: 750px;        
+}
+
+.image02 {
+  display: grid;
+    grid-template-columns: fit-content(200px) 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+      "image content"
+      "image footer";
+    grid-gap: 20px;
+    margin-bottom: 4em;
 }
